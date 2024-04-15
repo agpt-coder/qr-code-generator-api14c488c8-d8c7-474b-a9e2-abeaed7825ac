@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "qr-code-generator-api"
+version = "0.1.0"
+description = "The task at hand involves creating a feature within an application that allows users to generate QR codes based on specific inputs and preferences. The inputs can include data such as URLs, text, contact information, etc. The user desires the ability to customize the generated QR code in several ways, including its size, color, and error correction level (L, M, Q, H), with a preference for 'Q' level error correction. Additionally, the QR code image must be returnable in different formats, with SVG being the preferred format."
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+bcrypt = "^4.0.0"
+fastapi = "^0.85.0"
+passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+prisma = "*"
+pydantic = "*"
+python-jose = {version = "^3.3.0", extras = ["cryptography"]}
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
